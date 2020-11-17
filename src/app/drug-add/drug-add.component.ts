@@ -35,7 +35,7 @@ export class DrugAddComponent implements OnInit {
     },
     error=>{
       console.error(error)
-      this.response_message="fail";
+      this.response_message=error.message;
     }
     );
   }
