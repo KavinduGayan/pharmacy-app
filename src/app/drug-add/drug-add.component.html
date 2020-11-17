@@ -1,0 +1,51 @@
+
+{{response_message}}
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" >
+  <div class="form-group">
+    <label for="des">
+      description:
+    </label>
+      <input id="des" type="text" formControlName="description">
+  </div>
+  <div class="form-group">
+    <label for="brand">
+      brandName:
+    </label>
+      <input id="brand" type="text" formControlName="brandName">
+  </div>
+  <div class="form-group">
+    <label for="status">
+      status:
+    </label>
+      <input id="status" type="text" formControlName="status">
+    </div>
+    <div class="form-group">
+    <label for="pha">
+      pharmacyId:
+    </label>
+      <input id="pha" type="text" formControlName="pharmacyId">
+  </div>
+    <div formGroupName="drugDealer">
+      <h6>Drug Dealer Details:</h6>
+      <div class="form-group">
+      <label fpr="dealer">
+        dealerName:
+      </label>
+        <input id="dealer" type="text" formControlName="dealerName">
+    </div>
+      <label>
+        mobileNo:
+        <input type="text" formControlName="mobileNo">
+      </label>
+      <label>
+        email:
+        <input type="text" formControlName="email">
+      </label>
+      <label>
+        address:
+        <input type="text" formControlName="address">
+      </label>
+    </div>
+    
+  <input type="submit" value="submit" name="submit" class="btn btn-outline-primary" />
+  </form>

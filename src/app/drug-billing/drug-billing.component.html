@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <td scope="col">#</td>
+            <td scope="col">description</td>
+            <td scope="col">status</td>
+            <td scope="col">brand name</td>
+            <td scope="col">entered time</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr  *ngFor="let drug of drugs">
+            <td>{{drug.id}} </td>
+            <td>{{drug.description}} </td>
+            <td>{{drug.status}}</td> 
+            <td>{{drug.brandName}}</td> 
+            <td>{{drug.timestamp}}</td>
+        </tr>
+    </tbody>
+</table>
